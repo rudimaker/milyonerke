@@ -1,4 +1,4 @@
-﻿
+
 
 
 int dogruSayisi = 0;
@@ -27,33 +27,33 @@ if (c2 == "a")
     Console.WriteLine("DOĞRU CEVAP \n");
     dogruSayisi++;
 }
-else
+else 
 {
     Console.WriteLine("YANLIŞ CEVAP\n");
 }
 
-
-
-Console.WriteLine("SORU 3 : 5 * 2 + 8 / 2 - 2 ? (A/B) \nA) 7 B) 12");
-string c3 = Console.ReadLine().ToLower();
-
-if (c3 == "b")
-{
-    Console.WriteLine("DOĞRU CEVAP\n");
-    dogruSayisi++;
-}
-else
-{
-    Console.WriteLine("YANLIŞ CEVAP\n");
-}
-
-if(dogruSayisi>=2)
+if (dogruSayisi >= 2)
 {
     Console.WriteLine("TEBRİKLER KAZANDINIZ ");
 }
+
 else
 {
-    Console.WriteLine("KAYBETTİNİZ");
+    Console.WriteLine("SORU 3 : 5 * 2 + 8 / 2 - 2 ? (A/B) \nA) 7 B) 12");
+    string c3 = Console.ReadLine().ToLower();
+
+    if (c3 == "b")
+    {
+        Console.WriteLine("DOĞRU CEVAP\n");
+        dogruSayisi++;
+    }
+    else
+    {
+        Console.WriteLine("YANLIŞ CEVAP\n");
+        Console.WriteLine("KAYBETTİNİZ");
+    }
+    
+
 }
 
-/// 2 doğrudan sonra 3.soruyu sormaması gerektiğini biliyorum fakat kodlayamadım.
+
